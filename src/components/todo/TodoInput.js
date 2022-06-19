@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 
-
 const TodoInput = ({addTodo}) => {
 
     const [text,setText] = useState('')
@@ -15,14 +14,20 @@ const TodoInput = ({addTodo}) => {
         setText('')
     }
 
+    const keyPress = (e) =>{
+        if(e.key === 'Enter'){
+            sendTodo(text)
+        }
+    }
+
+
     return (
         <div>
             <h3>TodoInput</h3>
             <div>
-                <input type='text' value={text} onChange={(e)=>{setText(e.target.value)}}/>
+                <input type='text' value={text} onKeyPress={keyPress} onChange={(e)=>{setText(e.target.value)}}/>
                 <button onClick={()=>{sendTodo(text)}}>ADD</button>
             </div>
-            <hr/>
         </div>
     );
 };

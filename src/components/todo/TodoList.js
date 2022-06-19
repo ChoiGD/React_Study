@@ -1,6 +1,5 @@
 import React from 'react';
 import TodoListItem from "./TodoListItem";
-
 const TodoList = ({todos, removeTodo,cri,changeComplete}) => {
 
     //체크박스 + 조회
@@ -15,11 +14,11 @@ const TodoList = ({todos, removeTodo,cri,changeComplete}) => {
     })
 
     return (
-        <ul>
+        <div className='list-wrapper'>
             {todoFilter.map(todo => <TodoListItem key={todo.num}
                                              changeComplete={changeComplete}
                                              removeTodo={removeTodo} {...todo}/>)}
-        </ul>
+        </div>
     );
 };
 

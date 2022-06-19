@@ -3,6 +3,9 @@ import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
 import uuid from "react-uuid";
 import TodoCri from "./TodoCri";
+import "./TodoListTemp.css";
+
+
 
 const initState = [
     {num: uuid(), title:'testTitle...1', complete:true},
@@ -13,6 +16,8 @@ const initState = [
 ]
 
 const Todo = () => {
+
+
 
     const [todos,setTodos] = useState(initState)
     const [cri,setCri] = useState('A')
@@ -45,11 +50,13 @@ const Todo = () => {
 
 
     return (
-        <>
-            <TodoCri changeCri={changeCri}/>
-            <TodoInput addTodo={addTodo}/>
-            <TodoList todos={todos} removeTodo={removeTodo} cri={cri} changeComplete={changeComplete}/>
-        </>
+        <div className='wrapper'>
+            <div className='card frame'>
+                <TodoInput addTodo={addTodo}/>
+                <TodoList todos={todos} removeTodo={removeTodo} cri={cri} changeComplete={changeComplete}/>
+                <TodoCri changeCri={changeCri}/>
+            </div>
+        </div>
     );
 };
 

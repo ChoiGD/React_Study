@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 const TodoListItem = ({num,title,complete,removeTodo,changeComplete}) => {
 
     const [checked,setChecked] = useState(complete)
@@ -13,10 +12,10 @@ const TodoListItem = ({num,title,complete,removeTodo,changeComplete}) => {
 
 
     return (
-        <li>
+        <div className='list-item'>
             <input type="checkbox" checked={checked} onChange={(e)=>changeCheck(e)}/>
             {title}<button onClick={()=>{removeTodo(num)}}>Del</button>
-        </li>
+        </div>
     );
 };
 
