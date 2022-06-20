@@ -6,7 +6,7 @@ import TodoCri from "./TodoCri";
 import "./TodoListTemp.css";
 
 
-
+//초기화
 const initState = [
     {num: uuid(), title:'testTitle...1', complete:true},
     {num: uuid(), title:'testTitle...2', complete:false},
@@ -17,8 +17,7 @@ const initState = [
 
 const Todo = () => {
 
-
-
+    //useState [값, 함수]
     const [todos,setTodos] = useState(initState)
     const [cri,setCri] = useState('A')
 
