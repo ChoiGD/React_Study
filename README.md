@@ -4,5 +4,5 @@
 |:----:|:--:|:--:|:-----------:|
 | 1 | Component, Props, useState| Todo List 만들기 |☑️|
 | 2 | 비동기, Hook | SWAPI, Json Server 이용 | ☑️ |
-| 3 | Redux |  |  |
+| 3 | Custom Hooks, Redux |  | 진행중 |
 | 4 | Next.js |  |  |
