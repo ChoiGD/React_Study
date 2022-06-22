@@ -3,11 +3,12 @@ import './App.css';
 import Todo from "./components/todo";
 import AjaxTest from "./components/ajax/AjaxTest";
 import Post from "./components/post";
+import PostAPI from "./components/postapi";
 
 function App() {
   return (
     <>
-      <Post></Post>
+      <PostAPI></PostAPI>
     </>
   );
 }
