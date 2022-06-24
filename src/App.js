@@ -4,11 +4,12 @@ import Todo from "./components/todo";
 import AjaxTest from "./components/ajax/AjaxTest";
 import Post from "./components/post";
 import PostAPI from "./components/postapi";
+import UseContextTodo from "./components/useContextTodo";
 
 function App() {
   return (
     <>
-      <PostAPI></PostAPI>
+      <UseContextTodo></UseContextTodo>
     </>
   );
 }
