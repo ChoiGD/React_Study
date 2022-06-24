@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {ContextTodo} from "./index";
-import UseContextPagenation from "./UseContextPagenation";
+import UseContextPagination from "./UseContextPagination";
 
 const UseContextTodoList = () => {
 
@@ -18,7 +18,7 @@ const UseContextTodoList = () => {
                         <button onClick={()=>removeTodo(tno)}>Del</button>
                     </li> )}
             </ul>
-            <UseContextPagenation></UseContextPagenation>
+            <UseContextPagination></UseContextPagination>
         </div>
     );
 };

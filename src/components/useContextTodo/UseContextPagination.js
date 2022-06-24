@@ -11,7 +11,7 @@ const ListLI = styled.li`
   padding: 10px;
 `
 
-const UseContextPagenation = () => {
+const UseContextPagination = () => {
 
     const {result, movePage}= useContext(ContextTodo)
 
@@ -30,4 +30,4 @@ const UseContextPagenation = () => {
     );
 };
 
-export default UseContextPagenation;
+export default UseContextPagination;
