@@ -5,12 +5,13 @@ import AjaxTest from "./components/ajax/AjaxTest";
 import Post from "./components/post";
 import PostAPI from "./components/postapi";
 import UseContextTodo from "./components/useContextTodo";
+import ReduxTodos from "./components/reduxTodos";
 
 function App() {
   return (
-    <>
-      <UseContextTodo></UseContextTodo>
-    </>
+    <div>
+      <ReduxTodos></ReduxTodos>
+    </div>
   );
 }
 
