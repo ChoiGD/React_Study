@@ -5,4 +5,4 @@
 | 1 | Component, Props, useState| Todo List 만들기 |☑️|
 | 2 | 비동기, Hook | SWAPI, Json Server 이용 | ☑️ |
 | 3 | Custom Hooks, useContext | Custom Hooks, useContext (TodoList 예제) |☑️|
-| 4 | Redux, Next.js |  |  |
+| 4 | Redux, Next.js | Reudx TodoList | 진행중 |
